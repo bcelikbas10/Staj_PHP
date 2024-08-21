@@ -13,7 +13,7 @@
     $name = "elma armut";
     $food = "pizza";
     $email = "sahte123@gmail.com";
-    $pizza = "karisik";
+    $pizza = "sucuklu";
 
     $age = 21;
     $users = 2;
