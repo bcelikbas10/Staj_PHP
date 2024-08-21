@@ -13,6 +13,7 @@
     $name = "elma armut";
     $food = "pizza";
     $email = "sahte123@gmail.com";
+    $pizza = "karisik";
 
     $age = 21;
     $users = 2;
@@ -23,4 +24,6 @@
     
     echo"you are {$age} years old<br>";
     echo"there are {$users} users online<br>";
+
+    echo $$food;
 ?>
