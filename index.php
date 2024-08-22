@@ -58,13 +58,13 @@
 ?>
 </head>
 <body>
-    <form action="index.php">
-    <label>username:</label><br>
-    <input type="text" name="username"><br>
-    <label>password:</label><br>
-    <input type="password" name="password"><br>
-    <input type="submit" value="log in">
-</form>
+    <form action="index.php" method="post">
+        <label>username:</label><br>
+        <input type="text" name="username"><br>
+        <label>password:</label><br>
+        <input type="password" name="password"><br>
+        <input type="submit" value="log in">
+    </form>
 </body>
 </html>
 
@@ -72,3 +72,20 @@
     echo "{$_POST["username"]} <br>";
     echo "{$_POST["password"]} <br>";
 ?>
+</head>
+<body>
+    <form action="index.php" method="post"
+        <label>miktar: </label><br>
+        <input type="text" name="miktar">
+        <input type="submit" value="total">
+    </form>
+</body>
+</html>
+<?php
+    $item = "pizza";
+    $price = 5.99;
+    $miktar = $_POST["miktar"];
+    $total = null;
+
+    echo"you have ordered {$miktar} x {$item}/s";
+    echo"your total is: \${$total}";
