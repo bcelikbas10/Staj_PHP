@@ -89,3 +89,44 @@
 
     echo"you have ordered {$miktar} x {$item}/s";
     echo"your total is: \${$total}";
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <label>x:</label>
+        <input type="text" name="x">
+        <label>y:</label>
+        <input type="text" name="y">
+        <label>z:</label>
+        <input type="text" name="z">
+        <input type="submit" value="total">
+    </form>
+</body>
+</html>
+<?php
+    $x = $_POST["x"];
+    $y = $_POST["y"];
+    $z = $_POST["z"];
+    $total = null;
+
+    //$total = abs($x); mutlak değer
+    //$total = round($x); sayıyı yuvarlar
+    //$total = floor($x); her zaman aşağı yuvarlar
+    //$total = ceil($x); her zaman yukarı yuvarlar
+    //$total = pow($x, $y); üssünü alır
+    //$total = sqrt($x); karekökünü alır
+    //$total = max($x, $y, $z); üc sayı arasında en yükseğini alır
+    //$total = max($x, $y, $z); üc sayı arasında en düşüğünü alır
+    //$total = pi(); pi sayısını alır
+    //$total = rand(1, 6);  iki sayı arasında rastgele sayıyı ekrana verir
+    
+
+    echo $total;
+?>
