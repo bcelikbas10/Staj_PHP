@@ -123,10 +123,37 @@
     //$total = pow($x, $y); üssünü alır
     //$total = sqrt($x); karekökünü alır
     //$total = max($x, $y, $z); üc sayı arasında en yükseğini alır
-    //$total = max($x, $y, $z); üc sayı arasında en düşüğünü alır
+    //$total = min($x, $y, $z); üc sayı arasında en düşüğünü alır
     //$total = pi(); pi sayısını alır
     //$total = rand(1, 6);  iki sayı arasında rastgele sayıyı ekrana verir
-    
+
 
     echo $total;
+?>
+</head>
+<body>
+    <form action="index.php" method="post">
+        <label>radius:<label>
+        <input type="text" name="radius">
+        <input type="submit" value="calculate">
+    </form>
+</body>
+</html>
+<?php
+    $radius = $_POST["radius"];
+    $circumference = null;
+
+    $circumference = 2 * pi() * $radius;
+    $circumference = round($circumference, 2);
+
+    $area = pi() * pow($radius, 2);
+    $area = round($area, 2);
+
+    $volume = 4/3 * pi() * pow($radius, 3);
+    $volume = round($volume, 2);
+
+    echo"Circumference = {$circumference}cm <br>";
+    echo"Area = {$area}cm^2 <br>";
+    echo"Volume = {$volume}cm^3 <br>"
+
 ?>
