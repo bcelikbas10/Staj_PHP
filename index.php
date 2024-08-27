@@ -170,3 +170,32 @@
         echo "You must be 18+ to enter";
     }
 ?>
+<?php
+    $temp = 100;
+
+    if ($temp >= 0 && $temp <= 30){
+        echo"the weather is good.";
+    }
+    else{
+        echo"the weather is bad.";
+    }
+
+?>
+<?php
+    $temp = 100;
+    $cloudy = false
+
+    if ($temp < 0 || $temp > 30){
+        echo"the weather is bad.<br">;
+    }
+    else{
+        echo"the weather is good.<br>";
+    }
+
+    if(!$cloudy){
+        echo"It's sunny.";
+    }
+    else{
+        echo"It's cloudy.";
+    }
+?>
